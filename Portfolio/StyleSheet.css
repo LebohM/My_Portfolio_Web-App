@@ -121,7 +121,8 @@ h4{
     opacity: 50%;
 }
 .about-text{
-    width: 550px;    
+    width: 550px;
+    width: 100%;  
 }
 
 .about-text ul li{
