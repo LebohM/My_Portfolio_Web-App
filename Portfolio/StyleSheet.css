@@ -1,13 +1,16 @@
-*{
+body{
     padding:0;
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
+    z-index: 500;
+    width: 100%;
 }
 
 .topSection{
     height: 100vh;
     width: 100%;
+    z-index: 500;
     background-image: url(./Images/william-warby-ld4wZGqlLF4-unsplash.jpg);
     background-size: cover;
     background-position: center;
@@ -19,12 +22,14 @@ nav{
     padding-top: 45px;
     padding-left: 8px;
     padding-right: 8px;
+    z-index: 500;
 }
 .logo{
     color: white;
     font-size: 35px;
     letter-spacing: 1px;
     cursor: pointer;
+    
 }
 span{
     color: blueviolet;
@@ -341,4 +346,66 @@ footer .CopyRight{
     line-height: 26px;
     margin-bottom: 20px;
     font-weight:lighter;
+}
+/**********************************************For Responsiveness***************************************************************/
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .topSecContent h1 {
+        font-size: 45px;
+    }
+
+    .topSecContent h3, .topSecContent h4 {
+        font-size: 18px;
+    }
+
+    .mainAbt {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text, .About img {
+        width: 90%;
+    }
+
+    .box {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .form-card {
+        width: 90%;
+        height: auto;
+    }
+
+    .form-card form input,
+    .form-card form textarea {
+        width: 100%;
+    }
+
+    .tittle h2 {
+        font-size: 45px;
+        width: 100%;
+    }
+
+    footer p:nth-child(2),
+    footer .CopyRight {
+        width: 90%;
+    }
 }
